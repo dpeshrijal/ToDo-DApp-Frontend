@@ -82,7 +82,7 @@ function App() {
 
         const addTaskTxn = await ToDo.setTask(enteredItem);
 
-        setTimeout(() => setDisplayText("Ethereum is SLOW! Still mining your request"), 7000)
+        setTimeout(() => setDisplayText("Ethereum is SLOW! Still mining your request"), 5000)
 
         await addTaskTxn.wait();
 
@@ -98,6 +98,7 @@ function App() {
       }
     } catch (error) {
       console.log(error);
+      setDisplayText("");
     }
   };
 
@@ -143,7 +144,7 @@ function App() {
         setDisplayText("updating task..");
         if (!itemList[id].isCompleted) {
           const updateTodo = await ToDo.updateTask(id, true);
-          setTimeout(() => setDisplayText("Ethereum is SLOW! Still mining your request"), 7000)
+          setTimeout(() => setDisplayText("Ethereum is SLOW! Still mining your request"), 5000)
           await updateTodo.wait();
 
           console.log("Task Status Updated! You have Completed the Task");
@@ -162,6 +163,7 @@ function App() {
 
     } catch (error) {
       console.log(error);
+      setDisplayText("");
     }
   };
 
@@ -181,7 +183,7 @@ function App() {
         console.log("Deleting Task..")
         setDisplayText("Deleting Task..")
         const deleteTask = await ToDo.deleteTodoItem(id);
-        setTimeout(() => setDisplayText("Ethereum is SLOW! Still mining your request"), 7000)
+        setTimeout(() => setDisplayText("Ethereum is SLOW! Still mining your request"), 5000)
         await deleteTask.wait();
 
         console.log("Task Deleted!");
@@ -192,6 +194,7 @@ function App() {
       }
     } catch (error) {
       console.log(error);
+      setDisplayText("");
     }
   };
 
