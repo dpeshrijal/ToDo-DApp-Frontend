@@ -79,7 +79,10 @@ function App() {
 
         console.log("Adding Task..")
         setDisplayText("Adding Task..");
+
         const addTaskTxn = await ToDo.setTask(enteredItem);
+
+        setTimeout(() => setDisplayText("Ethereum is SLOW! Still mining your request"), 7000)
 
         await addTaskTxn.wait();
 
@@ -140,6 +143,7 @@ function App() {
         setDisplayText("updating task..");
         if (!itemList[id].isCompleted) {
           const updateTodo = await ToDo.updateTask(id, true);
+          setTimeout(() => setDisplayText("Ethereum is SLOW! Still mining your request"), 7000)
           await updateTodo.wait();
 
           console.log("Task Status Updated! You have Completed the Task");
@@ -177,7 +181,7 @@ function App() {
         console.log("Deleting Task..")
         setDisplayText("Deleting Task..")
         const deleteTask = await ToDo.deleteTodoItem(id);
-
+        setTimeout(() => setDisplayText("Ethereum is SLOW! Still mining your request"), 7000)
         await deleteTask.wait();
 
         console.log("Task Deleted!");
