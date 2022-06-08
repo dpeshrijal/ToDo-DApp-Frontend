@@ -56,15 +56,17 @@ input {
 }
 
 .add-task-btn {
+  cursor: pointer;
   min-height: 50px;
   width: 40px;
   border-radius: 50%;
   background-color: #f4f4f4;
   color: rgb(232, 0, 111);
-  font-size: 40px;
+  font-size: 50px;
   border: none;
   outline: none;
-  margin-left: 10px;
+  margin-left: 0px;
+  margin-right: 10px;
   padding-left: 30px;
   /* box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3); */
 }
