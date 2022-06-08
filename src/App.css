@@ -129,6 +129,11 @@ li {
   border-radius: 4px;
 }
 
+.completed:hover,
+.delete:hover {
+  background-color: pink;
+}
+
 
 
 .connect-wallet {
