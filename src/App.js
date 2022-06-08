@@ -3,7 +3,7 @@ import "./App.css"
 import abi from "./utils/ToDo.json"
 import { ethers } from "ethers"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faCheck, faTrash } from "@fortawesome/free-solid-svg-icons"
+import { faCheck, faPlus, faPlusCircle, faTrash } from "@fortawesome/free-solid-svg-icons"
 
 function App() {
 
@@ -218,7 +218,7 @@ function App() {
           onFocus={(e) => e.target.placeholder = ''}
           onBlur={(e) => e.target.placeholder = 'Add ToDo Items'}
           value={enteredItem} onChange={itemEvent} />
-        <button className="add-task-btn" onClick={setTask}>+</button>
+        <button className="add-task-btn" onClick={setTask}><FontAwesomeIcon icon={faPlusCircle} /></button>
         <ol>
           {liItemList}
         </ol>
