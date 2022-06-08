@@ -59,7 +59,7 @@ input {
   min-height: 50px;
   width: 40px;
   border-radius: 50%;
-  /* background-color: rgb(232, 0, 111); */
+  background-color: #f4f4f4;
   color: rgb(232, 0, 111);
   font-size: 40px;
   border: none;
