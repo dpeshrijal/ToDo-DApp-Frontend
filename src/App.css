@@ -170,3 +170,7 @@ li {
 .connect-wallet:hover {
   background-color: #F082AC;
 }
+
+.cross-task {
+  text-decoration: line-through;
+}

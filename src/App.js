@@ -138,13 +138,14 @@ function App() {
 
         console.log("updating task..");
         setDisplayText("updating task..");
-        if (itemList.isCompleted) {
+        if (!itemList[id].isCompleted) {
           const updateTodo = await ToDo.updateTask(id, true);
           await updateTodo.wait();
 
           console.log("Task Status Updated! You have Completed the Task");
           setDisplayText("Task Status Updated! You have Completed the Task");
           await getTask();
+
         }
         else {
           console.log("Task already completed")
