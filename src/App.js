@@ -3,7 +3,7 @@ import "./App.css"
 import abi from "./utils/ToDo.json"
 import { ethers } from "ethers"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faCheck, faPlus, faPlusCircle, faTrash } from "@fortawesome/free-solid-svg-icons"
+import { faCheck, faPlusCircle, faTrash } from "@fortawesome/free-solid-svg-icons"
 
 function App() {
 
