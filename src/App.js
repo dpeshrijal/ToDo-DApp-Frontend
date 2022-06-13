@@ -14,7 +14,7 @@ function App() {
   const [itemList, setItemList] = React.useState([]);
   const [currentAccount, setCurrentAccount] = React.useState("");
   const [connectText, setConnectText] = React.useState("Connect Wallet");
-  const [displayText, setDisplayText] = React.useState("");
+  const [displayText, setDisplayText] = React.useState("Change your Network to Rinkeby and connect to Metamask");
 
 
   const isWalletConnected = async () => {
